@@ -1,14 +1,4 @@
 
-/* Tablet Landscape */
-@media screen and (max-width: 1060px) {
-    #primary { width:67%; }
-    #secondary { width:30%; margin-left:3%;}  
-}
-/* Tabled Portrait */
-@media screen and (max-width: 768px) {
-    #primary { width:100%; }
-    #secondary { width:100%; margin:0; border:none; }
-}
 /*--------------- basic styling --------------- */
 html, body {
       margin: 0;
@@ -32,6 +22,16 @@ html, body {
 }
 
 /*--------------- typewriter effect --------------- */
+.line1 {
+      width: 24em;
+      top: 50%;
+      margin: auto;
+      /*border-right: 2px solid rgba(255, 255, 255, 0.75);*/
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      transform: translateY(-50%);
+}
 .line {
       width: 24em;
       top: 50%;
@@ -44,6 +44,7 @@ html, body {
 }
 
 .anim-typewriter {
+      margin-top: 1em;
       animation: typewriter 3s steps(28) 1s .7 normal both,
       blinkTextCussor 500ms steps(28) infinite normal;
 }
@@ -84,6 +85,7 @@ nav {
       height: 80px;
       position: fixed;
       z-index: 1;
+      margin-bottom: 3em !important;
 }
 
 nav #brand {
@@ -166,6 +168,7 @@ nav #menu li a:hover {
       visibility: hidden;
       opacity: 0;
       transition: all 1s ease-out;
+      margin-bottom: 3em !important;
 }
 
 #resize #menu {
