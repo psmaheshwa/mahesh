@@ -529,7 +529,7 @@ h6 {
 }
 
 .image {
-      background: url(sample2.png) no-repeat fixed center;
+      background: url(./sample2.png) no-repeat fixed center;
 }
 
 /*--------------- contact form --------------- */
